@@ -24,7 +24,7 @@
   <web-item name="CoolMenu" i18n-name-key="cool-menu.name" key="cool-menu" section="my-item-link/my-section" weight="1000"> 
     <description key="cool-menu.description">The Cool Menu</description>  
     <label key="cool-menu.label">Cool Menu</label>  
-    <link linkId="cool-menu-link">https://www.dependency-map.com</link> 
+    <link linkId="cool-menu-link">/plugins/servlet//mycoolservlet</link> 
   </web-item>  
   <web-item name="myItemX" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000"> 
     <description key="my-item.description">The myItem Plugin</description>  
