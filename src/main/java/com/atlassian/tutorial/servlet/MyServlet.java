@@ -3,7 +3,7 @@ package com.atlassian.tutorial.servlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.servlet.*;
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,7 +17,7 @@ public class MyServlet extends HttpServlet{
     {
         resp.setContentType("text/html");
         resp.getWriter().write("<html><body><i>Hello, World!</i></body></html>");
-        System.out.println("+++ Hello World Servlet log - printing to console");
+        System.out.println("+++ Hello World Servlet log - printing to console.");
     }
 
 }
