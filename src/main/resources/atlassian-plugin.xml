@@ -21,9 +21,14 @@
   <web-section name="mySection" i18n-name-key="my-section.name" key="my-section" location="my-item-link" weight="1000"> 
     <description key="my-section.description">The mySection Plugin</description>  
   </web-section>  
-  <web-item name="myItem" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000"> 
+  <web-item name="CoolMenu" i18n-name-key="cool-menu.name" key="cool-menu" section="my-item-link/my-section" weight="1000"> 
+    <description key="cool-menu.description">The Cool Menu</description>  
+    <label key="cool-menu.label">Cool Menu</label>  
+    <link linkId="cool-menu-link">https://www.dependency-map.com</link> 
+  </web-item>
+  <web-item name="myItemX" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000"> 
     <description key="my-item.description">The myItem Plugin</description>  
-    <label key="my-item.label"></label>  
+    <label key="my-item.label">Cool Menu</label>  
     <link linkId="my-item-link"></link> 
   </web-item>
 </atlassian-plugin>
