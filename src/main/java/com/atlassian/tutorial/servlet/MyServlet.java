@@ -16,7 +16,8 @@ public class MyServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
     {
         resp.setContentType("text/html");
-        resp.getWriter().write("<html><body>Hello World</body></html>");
+        resp.getWriter().write("<html><body><i>Hello, World!</i></body></html>");
+        System.out.println("+++ Hello World Servlet log - printing to console");
     }
 
 }
