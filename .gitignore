@@ -1,0 +1,9 @@
+
+target
+.docker/atlassian-jira
+.DS_Store
+.settings
+.classpath
+# Don't ignore .project, it's used by Eclipse
+!.project
+/bin/
