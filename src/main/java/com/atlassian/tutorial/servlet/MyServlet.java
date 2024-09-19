@@ -13,7 +13,7 @@ public class MyServlet extends HttpServlet{
     private static final Logger log = LoggerFactory.getLogger(MyServlet.class);
 
     private MyServlet() {
-        System.out.println("+++ MyServlet - constructed");
+        System.out.println("+++ My Jira 10 Servlet - constructed");
     };
 
     @Override
@@ -21,7 +21,7 @@ public class MyServlet extends HttpServlet{
     {
         resp.setContentType("text/html");
         resp.getWriter().write("<html><body><i>Hello, World!</i></body></html>");
-        System.out.println("+++ MyServlet - doGet called");
+        System.out.println("+++ My Jira 10 Servlet - doGet called");
     }
 
 }
