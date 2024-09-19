@@ -12,6 +12,24 @@
     <name>myPlugin2</name>
     <description>This is the com.atlassian.tutorial:myPlugin2 plugin for Atlassian JIRA.</description>
     <packaging>atlassian-plugin</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.jira</groupId>
+                <artifactId>jira-api-bom</artifactId>
+                <version>${jira.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.platform.dependencies</groupId>
+                <artifactId>platform-public-api</artifactId>
+                <version>${platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>com.atlassian.jira</groupId>
@@ -67,9 +85,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>jsr311-api</artifactId>
-            <version>1.1.1</version>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <!-- Uncomment to use TestKit in your project. Details at https://bitbucket.org/atlassian/jira-testkit -->
@@ -89,9 +106,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.4</version>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -155,7 +171,8 @@
         </plugins>
     </build>
     <properties>
-        <jira.version>9.12.2</jira.version>
+        <jira.version>10.0.0</jira.version>
+        <platform.version>7.1.0</platform.version>
         <amps.version>9.1.1</amps.version>
         <plugin.testrunner.version>2.0.9</plugin.testrunner.version>
         <osgi.javaconfig.version>0.2.0</osgi.javaconfig.version>
