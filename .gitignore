@@ -7,3 +7,5 @@ target
 # Don't ignore .project, it's used by Eclipse
 !.project
 /bin/
+/tmp/
+
